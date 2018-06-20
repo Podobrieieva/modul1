@@ -11,30 +11,30 @@
 	content: "";
 	clear: both;
 }
-.top_line{
-	margin-top: 65px;
-	position: relative;
-	
-}
+
 .wrapper{
-	width: 1060px;
+	max-width: 1060px;
+	min-width: 320px;
 	margin: 0 auto;
 	
 }
 #logo{
 	margin-top: 65px;
-}
-
-.nav{
-	position: absolute;
-}
-.menu li{
-	float: right;
 	display: inline-block;
-    list-style-type: none;
-    height: 14px;
-    width: 100px;
+	float: left;
+	width: 365px;
+}
 
+.menu li{
+	margin-top: 65px;
+    list-style-type: none;
+
+}
+.menu a:hover{
+	background-color: #f0f0f0;
+	border-bottom: 3px solid black;
+	transition: 0.95s;
+	cursor: ;
 }
 .menu a{
 	text-decoration: none;
@@ -42,6 +42,10 @@
     font-family: "PlayfairDisplay", serif;
     color: rgb(98, 98, 98);
 
+}
+a:hover{
+	border-bottom: 3px solid #f0f0f0;
+	transition: 0.95s;
 }
 .menu{
 	display: -webkit-flex;
@@ -55,69 +59,77 @@
 	-o-flex-direction: row;
 	flex-direction: row;
 	justify-content: flex-end;
+
+
 }
 .slider img{
 	width: 100%;
 	margin: 0 auto;
 	display: block;
+	margin-bottom: 95px;
 }
-section a{
-	font-size: 14px
-    font-family: "Ubuntu",serif;
-    color: rgb(180, 173, 158);
-}
+
 h2{
-	font-size: 30px;
+	font-size: 40px;
     font-family: "PlayfairDisplay", serif;
     color: rgb(98, 98, 98);
+    margin-bottom: 30px;
+    margin-top: 20px;
 }
 .wrapper1{
-	width: 900px;
+	max-width: 906px;
+	min-width: 300px;
 }
-.photo p{
-	font-family: Arial, sans-serif;
+p{
+	font-family: "Ubuntu", sans-serif;
 	color: #c0c0c0;
 	text-align: left;
 	padding-bottom: 43px;
-	padding-top: 35px;
-
-
+	
 }
 a{
+	font-size: 18px
+    font-family: "Ubuntu", sans-serif;
+    color: rgb(180, 173, 158);
 	text-decoration: none;
+
 }
-.photo{
+.introduction{
 	margin-top: 20px;
 	margin-bottom: 50px;
 }
-.photo a{
-	padding-bottom: 35px;
+.introduction a{
+	margin-bottom: 35px;
 }
-.picture{
+.part1,.part2,.part3{
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
 	display: -o-flex;
 	display: flex;
-	-webkit-flex-direction: row-reverse;
-	-moz-flex-direction: row-reverse;
-	-ms-flex-direction: row-reverse;
-	-o-flex-direction: row-reverse;
-	flex-direction: row-reverse;
+	-webkit-flex-direction: row;
+	-moz-flex-direction: row;
+	-ms-flex-direction: row;
+	-o-flex-direction: row;
+	flex-direction: row;
+	justify-content: space-between;
+	box-sizing: border-box;
+
+
 }
-.lifestyle,.text,.text2,.img1,.link1,.text2,.text3,.img3,.link2,.text4,.text5{
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
-	display: flex;
-	-webkit-flex-direction: row-reverse;
-	-moz-flex-direction: row-reverse;
-	-ms-flex-direction: row-reverse;
-	-o-flex-direction: row-reverse;
-	flex-direction: row-reverse;
-	margin-bottom: 30px;
+.part1_1,.part1_2,.part2_1,.part2_2,.part3_1,.part3_2{
+	width: 100%;
+	min-width: 420px;
+
 }
+.part1 img,.part2 img,.part3 img{
+	width: 100%;
+	height: 281px;
+	max-width: 420px;
+
+}
+
+
 .form{
 	background-color: #f0f0f0;
 	width: 100%;
@@ -147,11 +159,12 @@ a{
 }
 #submit{
 	position: absolute;
-	top: 50%;
+	top: 25%;
 	right: 36%;
-	background-image: url(../img.arrow.png);
 	display: inline-block;
 	content: "";
+	border: 1px solid #f0f0f0;
+	background-color: #f0f0f0;
 	width: 20px;
 	height: 20px;
 	-webkit-background-size: 100%;
@@ -168,28 +181,65 @@ button{
     text-align: center;
     display: block;
     background-color: #fff;
-    margin-bottom: 1380px;
+    margin-bottom: 200px;
 }
 footer{
-	position: relative;
 	height: 100px;
 	width: 100%;
 	background-color: #f0f0f0;
-
 }
 
+.terms,.contact{
+	font-family: "Ubuntu", sans-serif;
+	font-size: 14px;
+	color: rgb(98, 98, 98);
+}
 .terms{
-	position: absolute;
-	float: left;
+	margin-left: 20px;
 }
 .contact{
-	position: absolute;
-	float:right;
-
+	margin-right: 20px;
 }
 footer li{
 	list-style-type: none;
 	display: inline-block;
+}
+.footer{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-direction: row;
+	-moz-flex-direction: row;
+	-ms-flex-direction: row;
+	-o-flex-direction: row;
+	flex-direction: row;
+	justify-content: space-between;
+	padding-top: 40px;	
+}
+@media (max-width: 880px){
+    .part1,.part2,.part3,.menu{
+    	-webkit-flex-wrap: wrap-reverse;
+	    -moz-flex-wrap: wrap-reverse;
+	    -ms-flex-wrap: wrap-reverse;
+	    -o-flex-wrap: wrap-reverse;
+	    flex-wrap: wrap-reverse;
+    }
 
-
+}
+@media (max-width: 1070px) {
+	#logo{
+		margin-left: 20px;
+	}
+}
+@media (max-width: 930px){
+	.introduction,.part1,.part2,.part3{
+		margin-left: 15px;
+	}
+}
+@media (max-width: 430px){
+	#logo,.introduction,.part1,.part2,.part3{
+		margin-left: 0px;
+	}
 }
