@@ -94,6 +94,11 @@ a{
 	text-decoration: none;
 
 }
+button{
+	font-size: 18px
+    font-family: "Ubuntu", sans-serif;
+    color: rgb(180, 173, 158);
+}
 .introduction{
 	margin-top: 20px;
 	margin-bottom: 50px;
