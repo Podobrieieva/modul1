@@ -1,5 +1,5 @@
 *{
-	margin: 0 auto;
+	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
@@ -24,11 +24,17 @@
 	float: left;
 	width: 365px;
 }
-
+.menu{
+	float: right;
+}
 .menu li{
 	margin-top: 65px;
     list-style-type: none;
-
+    display: inline-block;
+	margin-right: 60px;
+}
+.menu li:last-child{
+	margin-right: 0;
 }
 .menu a:hover{
 	background-color: #f0f0f0;
@@ -47,21 +53,7 @@ a:hover{
 	border-bottom: 3px solid #f0f0f0;
 	transition: 0.95s;
 }
-.menu{
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
-	display: flex;
-	-webkit-flex-direction: row;
-	-moz-flex-direction: row;
-	-ms-flex-direction: row;
-	-o-flex-direction: row;
-	flex-direction: row;
-	justify-content: flex-end;
 
-
-}
 .slider img{
 	width: 100%;
 	margin: 0 auto;
@@ -79,6 +71,7 @@ h2{
 .wrapper1{
 	max-width: 906px;
 	min-width: 300px;
+	margin: 0 auto;
 }
 p{
 	font-family: "Ubuntu", sans-serif;
@@ -125,6 +118,8 @@ button{
 .part1_1,.part1_2,.part2_1,.part2_2,.part3_1,.part3_2{
 	width: 100%;
 	min-width: 420px;
+	max-width: 450px;
+	margin: 0 auto;
 
 }
 .part1 img,.part2 img,.part3 img{
@@ -132,13 +127,13 @@ button{
 	height: 281px;
 	max-width: 420px;
 
+
 }
 
 
 .form{
 	background-color: #f0f0f0;
 	width: 100%;
-	margin: 0 auto;
 	display: flex;
 	-ms-align-items: center;
 	align-items: center;
@@ -146,6 +141,9 @@ button{
 	margin-bottom: 50px;
 	height: 290px;
 	position: relative;
+}
+.form form{
+	margin: 0 auto;
 }
 
 .form label{
@@ -177,6 +175,7 @@ button{
 }
 
 button{
+	margin:0 auto;
 	margin-top: 50px;
 	width: 165px;
 	height: 60px;
